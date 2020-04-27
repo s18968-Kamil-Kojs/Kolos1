@@ -5,4 +5,19 @@
   </PropertyGroup>
 
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="DAL\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="DTOs\Requests\" />
+    <Folder Include="DTOs\Responses\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="DTOs\Responses\MedicamentResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
 </Project>
